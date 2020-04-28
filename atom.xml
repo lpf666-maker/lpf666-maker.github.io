@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lpf666-maker.github.io</id>
     <title>弱弱的lpf的blog</title>
-    <updated>2020-04-28T01:11:39.600Z</updated>
+    <updated>2020-04-28T07:29:28.820Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lpf666-maker.github.io"/>
     <link rel="self" href="https://lpf666-maker.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://lpf666-maker.github.io/images/avatar.png</logo>
     <icon>https://lpf666-maker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 弱弱的lpf的blog</rights>
+    <entry>
+        <title type="html"><![CDATA[博客搬家]]></title>
+        <id>https://lpf666-maker.github.io/post/bo-ke-ban-jia/</id>
+        <link href="https://lpf666-maker.github.io/post/bo-ke-ban-jia/">
+        </link>
+        <updated>2020-04-28T06:15:29.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="之前的博客">之前的博客</h1>
+<p><a href="https://www.cnblogs.com/lpf-666/">My blog</a></p>
+<p>其实挺纠结的，因为说实话，从之前一个什么都不会的 OIer，到终于拥有自己的博客。</p>
+<p>再到写了数十篇题解和文章，都有点舍不得博客园了。</p>
+<h1 id="现在的博客">现在的博客</h1>
+<p>但是搬迁是肯定的，因为基本上 Github 更加稳定，更加自由，同时也更加好玩。</p>
+<p>唯一的不足就是加载速度慢了一点，其他都很好了。（有自己的域名就是不一样）</p>
+<p>我也不知道有什么方法可以将老博客上面的文章搬到这里来，但是一定会尽力而为之的。</p>
+<h1 id="简单介绍一下">简单介绍一下</h1>
+<p>这个博客说实话...，就是用来记录一名蒟蒻 OIer 的学习记录的，当然也会同步更新于博客园。</p>
+<p>其实在下定决心搬迁之前，做了很多挣扎，但是不管怎么说，个人博客最好还是自己搭建比较开心一点。</p>
+<p>具体个人介绍可以看老博客的介绍吧。</p>
+<h1 id="结语">结语</h1>
+<p>希望自己在 OI 路上越走越长吧。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于]]></title>
         <id>https://lpf666-maker.github.io/post/about/</id>
