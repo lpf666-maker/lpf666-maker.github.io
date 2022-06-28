@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lpf666-maker.github.io</id>
     <title>LPF 的小窝</title>
-    <updated>2022-06-28T23:36:52.852Z</updated>
+    <updated>2022-06-28T23:37:57.754Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lpf666-maker.github.io"/>
     <link rel="self" href="https://lpf666-maker.github.io/atom.xml"/>
@@ -97,16 +97,6 @@ f(n,m,k)&amp;=&amp;\sum_{i=1}^n\sum_{j=1}^m[(i,j)=1][(j,k)=1]  \nonumber    \\
 <p>但是实际上的简单贪心结论能拿 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>61</mn></mrow><annotation encoding="application/x-tex">61</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">1</span></span></span></span> 而不仅仅是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>40</mn></mrow><annotation encoding="application/x-tex">40</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span><span class="mord">0</span></span></span></span>，贪心结论假了不妨从反面思考，而不是直接 give up。</p>
 <h2 id="noi2016旷野大计算"><a href="https://loj.ac/p/2088">「NOI2016」旷野大计算</a></h2>
 <p>有趣的提答题，分数给的足。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://lpf666-maker.github.io/post/guan-yu/</id>
-        <link href="https://lpf666-maker.github.io/post/guan-yu/">
-        </link>
-        <updated>2022-06-27T04:58:38.000Z</updated>
-        <content type="html"><![CDATA[<p>相当于一个本地 blog 吧，反正别人也看不到。</p>
-<p>能说的不能说的都能说了（</p>
 ]]></content>
     </entry>
     <entry>
