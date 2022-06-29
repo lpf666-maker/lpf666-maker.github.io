@@ -9,14 +9,14 @@
 <meta name="description" content="">
 <meta name="theme-color" content="#000">
 <title>历年 NOI VP 记录 | LPF 的小窝</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1656460134192">
+<link rel="shortcut icon" href="/favicon.ico?v=1656461259879">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/default.css"
+<link href="/media/hljs/styles/kimbie.light.css"
   rel="stylesheet">
 
 <link rel="stylesheet" href="/styles/main.css">
@@ -713,7 +713,7 @@ f(n,m,k)&amp;=&amp;\sum_{i=1}^n\sum_{j=1}^m[(i,j)=1][(j,k)=1]  \nonumber    \\
       }
     </script>
     <div class="poweredby">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+      
     </div>
   </footer>
   
@@ -1245,27 +1245,23 @@ f(n,m,k)&amp;amp;=&amp;amp;\sum_{i=1}^n\sum_{j=1}^m[(i,j)=1][(j,k)=1]  \nonumber
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://lpf666-maker.github.io/post/hello-gridea/"" data-c="
-          &lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
-✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/getgridea/gridea&#34;&gt;Github&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;https://gridea.dev/&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;http://fehey.com/&#34;&gt;示例网站&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;特性&#34;&gt;特性👇&lt;/h2&gt;
-&lt;p&gt;📝  你可以使用最酷的 &lt;strong&gt;Markdown&lt;/strong&gt; 语法，进行快速创作&lt;/p&gt;
-&lt;p&gt;🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片&lt;/p&gt;
-&lt;p&gt;🏷️  你可以对文章进行标签分组&lt;/p&gt;
-&lt;p&gt;📋  你可以自定义菜单，甚至可以创建外部链接菜单&lt;/p&gt;
-&lt;p&gt;💻  你可以在 &lt;strong&gt;Windows&lt;/strong&gt;，&lt;strong&gt;MacOS&lt;/strong&gt; 或 &lt;strong&gt;Linux&lt;/strong&gt; 设备上使用此客户端&lt;/p&gt;
-&lt;p&gt;🌎  你可以使用 &lt;strong&gt;𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌&lt;/strong&gt; 或 &lt;strong&gt;Coding Pages&lt;/strong&gt; 向世界展示，未来将支持更多平台&lt;/p&gt;
-&lt;p&gt;💬  你可以进行简单的配置，接入 &lt;a href=&#34;https://github.com/gitalk/gitalk&#34;&gt;Gitalk&lt;/a&gt; 或 &lt;a href=&#34;https://github.com/SukkaW/DisqusJS&#34;&gt;DisqusJS&lt;/a&gt; 评论系统&lt;/p&gt;
-&lt;p&gt;🇬🇧  你可以使用&lt;strong&gt;中文简体&lt;/strong&gt;或&lt;strong&gt;英语&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力&lt;/p&gt;
-&lt;p&gt;🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步&lt;/p&gt;
-&lt;p&gt;🌱 当然 &lt;strong&gt;Gridea&lt;/strong&gt; 还很年轻，有很多不足，但请相信，它会不停向前 🏃&lt;/p&gt;
-&lt;p&gt;未来，它一定会成为你离不开的伙伴&lt;/p&gt;
-&lt;p&gt;尽情发挥你的才华吧！&lt;/p&gt;
-&lt;p&gt;😘 Enjoy~&lt;/p&gt;
+          &lt;p&gt;使用了 Gridea 简单搭建了新  blog，放一些新近的思考和记录。&lt;/p&gt;
+&lt;p&gt;原站点看友链。&lt;/p&gt;
+&lt;p&gt;测试代码高亮：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include&amp;lt;bits/stdc++.h&amp;gt;
+typedef long long LL;
+#define rep(i, s, t) for(int i = (s); i &amp;lt;= (t); i ++)
+#define per(i, s, t) for(int i = (s); i &amp;gt;= (t); i --)
+#define Ede(i, u) for(int i = head[u]; i; i = e[i].nxt)
+using namespace std;
+
+int read() {
+	int x = 0, f = 1; char c = getchar();
+	while(c &amp;lt; &#39;0&#39; || c &amp;gt; &#39;9&#39;) f = (c == &#39;-&#39;) ? - 1 : 1, c = getchar();
+	while(c &amp;gt;= &#39;0&#39; &amp;amp;&amp;amp; c &amp;lt;= &#39;9&#39;) x = x * 10 + c - 48, c = getchar();
+	return x * f;
+}
+&lt;/code&gt;&lt;/pre&gt;
 ">Hello Gridea</a>
       </div>
       
