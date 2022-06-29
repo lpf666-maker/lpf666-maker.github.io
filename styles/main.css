@@ -2051,12 +2051,12 @@ p > code {
 body {
       background-color: #eee;
     }.header {
-        width: 1500px;
+        width: 80%;
         margin: 0 auto;
       }
 
       .main-continer {
-        width: 1500px;
+        width: 80%;
         margin: 0 auto;
       }
     body {
