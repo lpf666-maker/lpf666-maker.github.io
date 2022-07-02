@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="theme-color" content="#000">
 <title>IOI2020国家集训队作业 Part Ⅰ | LPF 的小窝</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1656750654962">
+<link rel="shortcut icon" href="/favicon.ico?v=1656751133344">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -1273,21 +1273,21 @@
 &lt;p&gt;个人感觉理解上述内容能够很自然的推导出来（&lt;/p&gt;
 &lt;p&gt;给出一个能看的代码：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void insert(int c) {
-	int cur = ++ tot, par = las;
-	len[cur] = len[las] + 1;
+    int cur = ++ tot, par = las;
+    len[cur] = len[las] + 1;
     las = cur;
 	
     while(par != -1 &amp;amp;&amp;amp; ! tr[par][c]) tr[par][c] = cur, par = lnk[par];		
-	if(par == -1) return lnk[cur] = 0, void();
+    if(par == -1) return lnk[cur] = 0, void();
 
-	int now = tr[par][c];
-	if(len[now] == len[par] + 1) return lnk[cur] = now, void();
-	int clo = ++ tot;
-	len[clo] = len[par] + 1;
-	lnk[clo] = lnk[now];
-	memcpy(tr[clo], tr[now], sizeof(tr[now]));
-	lnk[now] = lnk[cur] = clo;
-	while(par != -1 &amp;amp;&amp;amp; tr[par][c] == now) tr[par][c] = clo, par = lnk[par];
+    int now = tr[par][c];
+    if(len[now] == len[par] + 1) return lnk[cur] = now, void();
+    int clo = ++ tot;
+    len[clo] = len[par] + 1;
+    lnk[clo] = lnk[now];
+    memcpy(tr[clo], tr[now], sizeof(tr[now]));
+    lnk[now] = lnk[cur] = clo;
+    while(par != -1 &amp;amp;&amp;amp; tr[par][c] == now) tr[par][c] = clo, par = lnk[par];
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;noi2018你的名字&#34;&gt;&lt;a href=&#34;https://loj.ac/p/2720&#34;&gt; 「NOI2018」你的名字&lt;/a&gt;&lt;/h1&gt;

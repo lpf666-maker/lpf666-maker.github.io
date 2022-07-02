@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lpf666-maker.github.io</id>
     <title>LPF 的小窝</title>
-    <updated>2022-07-02T08:30:58.496Z</updated>
+    <updated>2022-07-02T08:39:01.954Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lpf666-maker.github.io"/>
     <link rel="self" href="https://lpf666-maker.github.io/atom.xml"/>
@@ -79,21 +79,21 @@
 <p>个人感觉理解上述内容能够很自然的推导出来（</p>
 <p>给出一个能看的代码：</p>
 <pre><code class="language-cpp">void insert(int c) {
-	int cur = ++ tot, par = las;
-	len[cur] = len[las] + 1;
+    int cur = ++ tot, par = las;
+    len[cur] = len[las] + 1;
     las = cur;
 	
     while(par != -1 &amp;&amp; ! tr[par][c]) tr[par][c] = cur, par = lnk[par];		
-	if(par == -1) return lnk[cur] = 0, void();
+    if(par == -1) return lnk[cur] = 0, void();
 
-	int now = tr[par][c];
-	if(len[now] == len[par] + 1) return lnk[cur] = now, void();
-	int clo = ++ tot;
-	len[clo] = len[par] + 1;
-	lnk[clo] = lnk[now];
-	memcpy(tr[clo], tr[now], sizeof(tr[now]));
-	lnk[now] = lnk[cur] = clo;
-	while(par != -1 &amp;&amp; tr[par][c] == now) tr[par][c] = clo, par = lnk[par];
+    int now = tr[par][c];
+    if(len[now] == len[par] + 1) return lnk[cur] = now, void();
+    int clo = ++ tot;
+    len[clo] = len[par] + 1;
+    lnk[clo] = lnk[now];
+    memcpy(tr[clo], tr[now], sizeof(tr[now]));
+    lnk[now] = lnk[cur] = clo;
+    while(par != -1 &amp;&amp; tr[par][c] == now) tr[par][c] = clo, par = lnk[par];
 }
 </code></pre>
 <h1 id="noi2018你的名字"><a href="https://loj.ac/p/2720"> 「NOI2018」你的名字</a></h1>
