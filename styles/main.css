@@ -2085,11 +2085,11 @@ body {
     .node-title::before {
       background-color: #555;
     }a {
-      color: #339af0;
+      color: #555;
     }
     
     .next-md-body a, .friends-box a  {
-      color: #339af0;
+      color: #555;
     }a:hover {
       color: #222;
     }
