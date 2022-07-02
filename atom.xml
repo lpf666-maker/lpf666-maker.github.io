@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lpf666-maker.github.io</id>
     <title>LPF 的小窝</title>
-    <updated>2022-07-02T08:27:37.506Z</updated>
+    <updated>2022-07-02T08:30:58.496Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lpf666-maker.github.io"/>
     <link rel="self" href="https://lpf666-maker.github.io/atom.xml"/>
@@ -18,7 +18,7 @@
         <content type="html"><![CDATA[<p>之前学过 SAM 但是过不久就发现“忘记”了，究其故里就是没有真正理解 SAM 原理。</p>
 <p>故特此记录，大部分知识均来源于：</p>
 <ul>
-<li><a href="https://ouuan.github.io/post/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BAsam%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">后缀自动机（SAM）学习笔记 - ouuan的博客</a>。</li>
+<li><a href="https://ouuan.github.io/post/%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BAsam%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">后缀自动机（SAM）学习笔记 - ouuan的博客</a></li>
 <li><a href="https://oi-wiki.org/string/sam/">后缀自动机 (SAM) - OI Wiki</a></li>
 </ul>
 <h1 id="确定性有限状态自动机dfa">确定性有限状态自动机（DFA）</h1>
