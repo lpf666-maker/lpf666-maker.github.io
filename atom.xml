@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lpf666-maker.github.io</id>
     <title>LPF 的小窝</title>
-    <updated>2022-06-30T11:38:13.964Z</updated>
+    <updated>2022-07-02T04:11:13.832Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lpf666-maker.github.io"/>
     <link rel="self" href="https://lpf666-maker.github.io/atom.xml"/>
@@ -10,13 +10,12 @@
     <icon>https://lpf666-maker.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, LPF 的小窝</rights>
     <entry>
-        <title type="html"><![CDATA[更本质的网络流相关算法]]></title>
+        <title type="html"><![CDATA[网络流理论学习笔记]]></title>
         <id>https://lpf666-maker.github.io/post/geng-ben-zhi-de-wang-luo-liu-xiang-guan-suan-fa/</id>
         <link href="https://lpf666-maker.github.io/post/geng-ben-zhi-de-wang-luo-liu-xiang-guan-suan-fa/">
         </link>
         <updated>2022-06-30T11:13:08.000Z</updated>
-        <content type="html"><![CDATA[<p>标题党实锤，实际上是网络流理论基础太差专门学一下。</p>
-<p>学习还是到本质比较好，把之前只是记住的一些结论用各种理论理性愉悦一下 :happy:。</p>
+        <content type="html"><![CDATA[<p>学习还是到本质比较好，把之前只是记住的一些结论用各种理论理性愉悦一下 :happy:。</p>
 <h1 id="理性愉悦">理性愉悦</h1>
 <p>首先要引入一些基本性质，设 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>u</mi><mo separator="true">,</mo><mi>v</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">f(u,v)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">u</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mclose">)</span></span></span></span> 表示 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi><mo>→</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u\to v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span> 的流量，则：</p>
 <ul>
@@ -427,6 +426,35 @@ f(n,m,k)&amp;=&amp;\sum_{i=1}^n\sum_{j=1}^m[(i,j)=1][(j,k)=1]  \nonumber    \\
 <p>所以放心的在原基础上贪心就好了，老套路的用并查集 + 堆写贪心，很好实现。</p>
 <h2 id="noi2017分身术"><a href="https://loj.ac/p/2307">「NOI2017」分身术</a></h2>
 <p>计算几何待补。</p>
+<h1 id="noi2018">NOI2018</h1>
+<p>雪崩的一天，上午 VP Day1 直接强行肝 T2 3h 弃赛，下午的 Day2 稍微正常一点点。</p>
+<p>能吸取的教训很多：</p>
+<ul>
+<li>不要想当然的想到一个性质就认为是对的。（Day1T2 的前 1h）</li>
+<li>即使想到了正确的性质也不要死磕，因为可能性质本身都没有研究完全。（Day1T2 的后 2h）</li>
+<li>及时止损，不要认为 *** 暴力分很少，迟迟不想开写，结果出场人均比你高个暴力分，追悔莫及。</li>
+<li>SAM 的完全不熟练，只停留于打个板子。（虽然说 SAM 好像在考纲中变成时代的眼泪了）</li>
+</ul>
+<p>再次品味到了 PKUSC 时的无力感，那种对着屏幕毫无办法的无能狂怒（</p>
+<p>实际上在那种状态下不太可能有真正有效的思考，所以务必不要陷入其中，慢慢尝试从不同角度分析题目，及时去打已经想到的分。</p>
+<h2 id="noi2018归程"><a href="https://loj.ac/p/2718">「NOI2018」归程</a></h2>
+<p>最短路 + Kruscal 重构树</p>
+<h2 id="noi2018冒泡排序"><a href="https://loj.ac/p/2719"> 「NOI2018」冒泡排序</a></h2>
+<p>心力交瘁（</p>
+<p>首先不管字典序要求，这一类计数题往往需要找一个适合计算的充要条件。</p>
+<p>然后我 naive 了一个结论并写了 1h 才发现样例过不去。</p>
+<p>此时已经 2h 了，强迫自己冷静下来，发现一个真 · 充要，但是实际上转化过于繁杂，完全不可做（</p>
+<p>真正能用条件：合法 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇔</mo></mrow><annotation encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">⇔</span></span></span></span> 不存在长度 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\geq 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span> 的下降子序列 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇔</mo></mrow><annotation encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">⇔</span></span></span></span> 序列能划分成两个上升子序列。</p>
+<p>然后据此 DP，会推出一个类似 Catalan 的数组，并且 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo><mo>→</mo><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)\to O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> 的关键就是利用组合意义推出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 的组合式。</p>
+<h2 id="noi2018你的名字"><a href="https://loj.ac/p/2720">「NOI2018」你的名字</a></h2>
+<p>在做这题之前对 SAM 的熟练度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>。</p>
+<h2 id="noi2018屠龙勇士"><a href="https://loj.ac/p/2721">「NOI2018」屠龙勇士</a></h2>
+<p>exCRT + 对 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 的讨论。算是为了使题目不那么板子强行套上去的吧。（其实还套了个 multiset）</p>
+<h2 id="noi2018情报中心"><a href="https://loj.ac/p/2722">「NOI2018」情报中心</a></h2>
+<p>VP 的时候大脑一片空白。实际把 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>max</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\max</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mop">max</span></span></span></span> 拆开讨论就能做 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">s1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord mathdefault">s</span><span class="mord">1</span></span></span></span> 及以上的所有部分分。</p>
+<p>剩下的则需要一个巧妙的价值转化，规避了繁琐的讨论，确实优美而巧妙。</p>
+<h2 id="noi2018多边形"><a href="https://loj.ac/p/2723">「NOI2018」多边形</a></h2>
+<p>状压难题，待补。</p>
 ]]></content>
     </entry>
     <entry>
