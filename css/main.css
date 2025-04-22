@@ -1426,7 +1426,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #01f98e;
+    background: #98ff91;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3053,23 +3053,4 @@ header.header {
   .comments {
     padding: 10px 12px;
   }
-}
-body {
-  background: url("https://hv.z.wiki/autoupload/20250422/mesy/2560X1440/background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-.content-wrap {
-  opacity: 0.9;
-}
-.sidebar {
-  opacity: 0.9;
-}
-.header-inner {
-  background: rgba(255,255,255,0.9);
-}
-.popup {
-  opacity: 0.9;
 }
