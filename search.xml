@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>新的 Blog，新的开始！</title>
+    <url>/project/2025/04/21/test/</url>
+    <content><![CDATA[<h1 id="latex-测试">Latex 测试</h1>
+<p>使用 Mathjax 似乎不像 typora 中的那样支持很多简写，比较烦。 <span
+class="math display">$$
+\sum_{i=1}^n a_i
+$$</span></p>
+<p><span class="math display">$$
+\forall \varepsilon &gt; 0, \exists N &gt; 0, \forall n &gt; m &gt; N,
+\left|\sum_{i=m+1}^n a_i\right| &lt; \varepsilon
+$$</span></p>
+<h1 id="代码测试">代码测试</h1>
+<p>附博客缺省源：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">unsigned</span> <span class="type">long</span> <span class="type">long</span> ull;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> rep(i, a, b) for(int i = (a); i &lt;= (b); i ++)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> per(i, a, b) for(int i = (a); i &gt;= (b); i --)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> Ede(i, u) for(int i = head[u]; i; i = e[i].nxt)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> eb emplace_back</span></span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; pii;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mp make_pair</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fi first</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> se second</span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> P = <span class="number">998244353</span>;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">plu</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123;<span class="keyword">return</span> x + y &gt;= P ? x + y - P : x + y;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">del</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123;<span class="keyword">return</span> x - y &lt;  <span class="number">0</span> ? x - y + P : x - y;&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> &amp;x, <span class="type">int</span> y)</span> </span>&#123;x = <span class="built_in">plu</span>(x, y);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">sub</span><span class="params">(<span class="type">int</span> &amp;x, <span class="type">int</span> y)</span> </span>&#123;x = <span class="built_in">del</span>(x, y);&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">qpow</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> </span>&#123;<span class="type">int</span> s = <span class="number">1</span>; <span class="keyword">for</span>(; b; b &gt;&gt;= <span class="number">1</span>, a = <span class="number">1ll</span> * a * a % P) <span class="keyword">if</span>(b &amp; <span class="number">1</span>) s = <span class="number">1ll</span> * s * a % P; <span class="keyword">return</span> s;&#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">int</span> <span class="title">read</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="type">int</span> x = <span class="number">0</span>, f = <span class="number">1</span>; <span class="type">char</span> c = <span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">while</span>(c &lt; <span class="string">&#x27;0&#x27;</span> || c &gt; <span class="string">&#x27;9&#x27;</span>) f = (c == <span class="string">&#x27;-&#x27;</span>) ? - <span class="number">1</span> : <span class="number">1</span>, c = <span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">while</span>(c &gt;= <span class="string">&#x27;0&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;9&#x27;</span>) x = x * <span class="number">10</span> + c - <span class="number">48</span>, c = <span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">return</span> x * f;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="搭建过程">搭建过程</h1>
+<p>小小记录一下折腾了小一天的成果吧。</p>
+<p>设备是 arm 架构的 macOS。</p>
+<p>首先手动下载了 nodejs，git 好像是 mac
+自带的，然后学习了在终端中挂上梯子的办法（这样省去了很多事）。</p>
+<p>然后参考 hexo 官网用几条 npm 指令搭建好了 hexo 初始文档，并且 ssh
+上了我的 github 同名库，也成功 deploy 上了仓库。</p>
+<p>最后折腾了一会 butterfly 决定使用 next 主题，同时加入了 mathjax 和
+背景图片，调整了字体大小，这个简洁的 github + hexo
+博客就算是搭建完成了。</p>
+<h1 id="后续安排">后续安排</h1>
+<p>打算把大一学习的各种笔记都往上搬运，整理两门数学课的笔记（数分高代），以及把手写版本的
+计算概论 笔记转化成电子版本，这个暑假事情还算多。</p>
+<p>同时 OI 复建也会记录 CF、AT 等等都补题，如果还打 XCPC
+的话也可以试一试更新游记。</p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+</search>
